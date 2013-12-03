@@ -17,7 +17,19 @@ our @EXPORT_OK = @EXPORT;
 
 =head1 SYNOPSIS
 
+    use Object::Signature::Portable;
+
+    my $sig = signature( $object ); # MD5 hex of object signature
+
+    my $sig = signature(
+      digest => 'SHA1',             # SHA-1 digest
+      method => 'b64udigest',       # as URL-safe base-64
+      data   => $object,
+    );
+
 =head1 DESCRIPTION
+
+
 
 =cut
 
