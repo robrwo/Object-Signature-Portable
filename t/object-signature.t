@@ -4,7 +4,7 @@ use Test::Warnings;
 BEGIN {
     eval "use Object::Signature;";
     plan skip_all => "Object::Signature is not installed" if $@;
-    eval "use Storable ();";
+    eval "use Storable 2.11 ();";
     plan skip_all => "Storable is not installed" if $@;
 }
 
