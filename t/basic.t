@@ -18,7 +18,7 @@ is signature( '' ), '9d4568c009d203ab10e33ea9953a0264', 'MD5 blank string';
 is signature( digest => 'MD5', data => '' ),
     '9d4568c009d203ab10e33ea9953a0264', 'MD5 blank string';
 
-is signature( digest => 'MD5', method => 'b64udigest', data => '' ),
+is signature( digest => 'MD5', format => 'b64udigest', data => '' ),
     'nUVowAnSA6sQ4z6plToCZA', 'MD5 blank string';
 
 

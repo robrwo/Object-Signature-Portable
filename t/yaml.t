@@ -18,10 +18,10 @@ sub serializer {
     return Dump($_[0]);
 }
 
-is signature( digest => 'MD5', method => 'b64udigest', data => '' ),
+is signature( digest => 'MD5', format => 'b64udigest', data => '' ),
     'nUVowAnSA6sQ4z6plToCZA', 'MD5 blank string';
 
-is signature( digest => 'MD5', method => 'b64udigest', serializer => \&serializer, data => '' ),
+is signature( digest => 'MD5', format => 'b64udigest', serializer => \&serializer, data => '' ),
     'NQadES1QTFNhg7lXPmrdWA', 'MD5 blank string (YAML)';
 
 

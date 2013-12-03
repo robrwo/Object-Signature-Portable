@@ -25,7 +25,7 @@ Object::Signature::Portable - generate portable signatures of objects
 
     my $sig = signature(
       digest => 'SHA1',             # SHA-1 digest
-      method => 'b64udigest',       # as URL-safe base-64
+      format => 'b64udigest',       # as URL-safe base-64
       data   => $object,
     );
 
@@ -52,7 +52,7 @@ can be customized, as needed.
   my $sig = signature(
     data       => $data,
     digest     => 'MD5',         # default
-    method     => 'hexdigest',   # default
+    format     => 'hexdigest',   # default
     serializer => sub { ... },
   );
 
@@ -66,7 +66,7 @@ The following options are supported:
 
 The cyptographic digest algorithm, as supported by L<Crypt::Digest>.
 
-=item C<method>
+=item C<format>
 
 The L<Crypt::Digest> formatting method for the signature, which can be
 one of:
@@ -117,9 +117,9 @@ sub signature {
 
     $args{digest} //= 'MD5';
 
-    $args{method} //= 'hexdigest';
-    unless ($args{method} =~ m/^(?:hex|b64u?)digest$/) {
-        croak sprintf('Invalid digest method: %s', $args{method});
+    $args{format} //= 'hexdigest';
+    unless ($args{format} =~ m/^(?:hex|b64u?)digest$/) {
+        croak sprintf('Invalid digest format: %s', $args{format});
     }
 
     $args{serializer} //= sub {
@@ -133,10 +133,10 @@ sub signature {
     my $digest = Crypt::Digest->new( $args{digest} );
     $digest->add( &{$args{serializer}}( $args{data} ) );
 
-    if (my $method = $digest->can($args{method})) {
+    if (my $method = $digest->can($args{format})) {
         return $digest->$method;
     } else {
-        croak sprintf('Unexpected error with digest method: %s', $args{method});
+        croak sprintf('Unexpected error with digest format: %s', $args{format});
     }
 }
 

@@ -8,7 +8,7 @@ SYNOPSIS
 
         my $sig = signature(
           digest => 'SHA1',             # SHA-1 digest
-          method => 'b64udigest',       # as URL-safe base-64
+          format => 'b64udigest',       # as URL-safe base-64
           data   => $object,
         );
 
@@ -32,7 +32,7 @@ EXPORTS
       my $sig = signature(
         data       => $data,
         digest     => 'MD5',         # default
-        method     => 'hexdigest',   # default
+        format     => 'hexdigest',   # default
         serializer => sub { ... },
       );
 
@@ -43,7 +43,7 @@ EXPORTS
     "digest"
         The cyptographic digest algorithm, as supported by Crypt::Digest.
 
-    "method"
+    "format"
         The Crypt::Digest formatting method for the signature, which can be
         one of:
 
