@@ -70,12 +70,6 @@ The following options are supported:
 
 The cyptographic digest algorithm, as supported by L<Crypt::Digest>.
 
-Note that for most purposes (detecting when two Perl data structures
-are the same), MD5 is probably good enough.  However, if you are
-hashing that in part comes from untrusted sources, or the consequences
-of two different data structures having the same signature are
-significant, then you should consider using a different algorithm.
-
 =item C<format>
 
 The L<Crypt::Digest> formatting method for the signature, which can be
@@ -162,6 +156,8 @@ sub signature {
 
 =head1 LIMITATIONS
 
+=head2 Signatures for Arbitrary Objects
+
 By default, this module uses L<JSON::MaybeXS> to serialize Perl objects.
 
 This requires the objects to have a C<TO_JSON> method in order to be
@@ -192,6 +188,30 @@ reference that can then be passed to the C<signature> function, e.g.
 
 Note that L<Object::Serializer> allows you to define custom
 serialization strategies for various reference types.
+
+=head2 Portability
+
+The portability of signatures across different versions of
+L<JSON::MaybeXS> is, of course, dependent upon whether those versions
+will produce consistent output.
+
+If you are concerned about this, then write our own serializer, or
+avoid upgrading L<JSON::MaybeXS> until you are sure that the it will
+produce consistent signatures.
+
+=head2 Security
+
+This module is intended for generating signatures of Perl data
+structures, as a simple means of determining whether two structures
+are different.
+
+For that purpose, the MD5 algorithm is probably good enough.  However,
+if you are hashing that in part comes from untrusted sources, or the
+consequences of two different data structures having the same
+signature are significant, then you should consider using a different
+algorithm.
+
+This module is I<not> intended for hashing passwords.
 
 =head1 SEE ALSO
 

@@ -1,5 +1,10 @@
 Revision history for perl distirubton Object-Signature-Portable
 
+
+  [Documentation]
+  - Added subsections to the LIMITATIONS section about Portability and
+    Security, and moved a note about the hash algorithm to the latter.
+
 v0.1.0  2013-12-04
 
   - First release.
