@@ -101,6 +101,15 @@ The digest as a URL-friendly base-64 string.
 
 =back
 
+=item C<prefix>
+
+If set to a true value, the digest is prefixed by the name of the
+digest algorithm.
+
+This is useful when you may want to change the digest algorithm used
+by an application in the future, but do not want to regenerate
+signatures for existing objects in a data store.
+
 =item C<serializer>
 
 The serialization method, which is a subroutine that takes the data as
@@ -144,7 +153,8 @@ sub signature {
     $digest->add( &{$args{serializer}}( $args{data} ) );
 
     if (my $method = $digest->can($args{format})) {
-        return $digest->$method;
+        my $prefix = $args{prefix} ? ($args{digest} . ':') : '';
+        return $prefix . $digest->$method;
     } else {
         croak sprintf('Unexpected error with digest format: %s', $args{format});
     }
