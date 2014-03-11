@@ -8,7 +8,7 @@ use Crypt::Digest;
 use Exporter::Lite;
 use JSON::MaybeXS;
 
-use version 0.77; our $VERSION = version->declare('v0.1.0');
+use version 0.77; our $VERSION = version->declare('v0.1.1');
 
 our @EXPORT = qw/ signature /;
 our @EXPORT_OK = @EXPORT;
@@ -258,7 +258,7 @@ Robert Rothenberg <rrwo@cpan.org> (on behalf of Foxtons, Ltd.)
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright 2013 Robert Rothenberg.
+Copyright 2013-2014 Robert Rothenberg.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of the the Artistic License (2.0). You may obtain a
