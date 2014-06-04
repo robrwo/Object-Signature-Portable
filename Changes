@@ -3,6 +3,8 @@ Revision history for perl distirubton Object-Signature-Portable
   [Documentation]
   - Fixed typos in POD.
 
+  - Added requirements to README.
+
   [Other Changes]
   - Added QA tests to the git repo.
 

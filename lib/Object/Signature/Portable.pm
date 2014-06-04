@@ -17,6 +17,25 @@ our @EXPORT_OK = @EXPORT;
 
 Object::Signature::Portable - generate portable signatures of objects
 
+=begin readme
+
+=head1 REQUIREMENTS
+
+This module requires Perl v5.10 or newer, and the following non-core
+modules:
+
+=over
+
+=item L<Crypt::Digest>
+
+=item L<Exporter::Lite>
+
+=item L<JSON::MaybeXS>
+
+=back
+
+=end readme
+
 =head1 SYNOPSIS
 
     use Object::Signature::Portable;
