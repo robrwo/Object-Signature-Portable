@@ -8,7 +8,7 @@ use Crypt::Digest;
 use Exporter::Lite;
 use JSON::MaybeXS;
 
-use version 0.77; our $VERSION = version->declare('v0.1.1');
+use version 0.77; our $VERSION = version->declare('v0.1.2');
 
 our @EXPORT = qw/ signature /;
 our @EXPORT_OK = @EXPORT;
