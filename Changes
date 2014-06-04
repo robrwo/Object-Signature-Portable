@@ -1,5 +1,9 @@
 Revision history for perl distirubton Object-Signature-Portable
 
+  [Documentation]
+  - Fixed typos in POD.
+
+  [Other Changes]
   - Added QA tests to the git repo.
 
 v0.1.1  2014-03-11
