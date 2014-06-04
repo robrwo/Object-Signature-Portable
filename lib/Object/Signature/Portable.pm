@@ -17,6 +17,25 @@ our @EXPORT_OK = @EXPORT;
 
 Object::Signature::Portable - generate portable signatures of objects
 
+=begin readme
+
+=head1 REQUIREMENTS
+
+This module requires Perl v5.10 or newer, and the following non-core
+modules:
+
+=over
+
+=item L<Crypt::Digest>
+
+=item L<Exporter::Lite>
+
+=item L<JSON::MaybeXS>
+
+=back
+
+=end readme
+
 =head1 SYNOPSIS
 
     use Object::Signature::Portable;
@@ -70,7 +89,7 @@ The following options are supported:
 
 =item C<digest>
 
-The cyptographic digest algorithm, as supported by L<Crypt::Digest>.
+The cryptographic digest algorithm, as supported by L<Crypt::Digest>.
 
 =item C<format>
 
@@ -262,7 +281,7 @@ signatures.
 
 =head1 AUTHOR
 
-Robert Rothenberg <rrwo@cpan.org> (on behalf of Foxtons, Ltd.)
+Robert Rothenberg C<< <rrwo@cpan.org> >> (on behalf of Foxtons, Ltd.)
 
 =head1 LICENSE AND COPYRIGHT
 
