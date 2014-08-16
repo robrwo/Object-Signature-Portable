@@ -1,6 +1,8 @@
-Revision history for perl distirubton Object-Signature-Portable
+Revision history for perl distribution Object-Signature-Portable
 
 v0.1.3
+  [Documentation]
+  - Fixed typos in Changes.
 
   [Other Changes]
   - Fixed license in Makefile.PL to make CPANTS happy.
