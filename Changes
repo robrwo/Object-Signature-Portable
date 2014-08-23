@@ -1,6 +1,8 @@
 Revision history for perl distirubton Object-Signature-Portable
 
 v0.1.4
+  [Documentation]
+  - Added note about alternative encoders.
 
 v0.1.3
 
