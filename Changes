@@ -7,6 +7,9 @@ v0.1.5
 
   - Test::Warnings is only used for author tests.
 
+  [Other Changes]
+  - Fixed MANIFEST.SKIP rules.
+
 v0.1.4  2014-09-02
   [Documentation]
   - Added note about alternative encoders.
