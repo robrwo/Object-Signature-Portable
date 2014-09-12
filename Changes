@@ -1,5 +1,12 @@
 Revision history for perl distribution Object-Signature-Portable
 
+v0.1.6
+  [Documentation]
+  - Added more details about alternative encoders.
+
+  - Added design considerations for choosing JSON as a default
+    serializer.
+
 v0.1.5  2014-09-03
   [Tests]
   - Tests require Test::Differences, since some CPAN::Testers
