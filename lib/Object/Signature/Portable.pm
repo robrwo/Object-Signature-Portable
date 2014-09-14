@@ -1,5 +1,7 @@
 package Object::Signature::Portable;
 
+use v5.10;
+
 use strict;
 use warnings;
 
@@ -15,7 +17,7 @@ our @EXPORT_OK = @EXPORT;
 
 =head1 NAME
 
-Object::Signature::Portable - generate portable signatures of objects
+Object::Signature::Portable - generate portable fingerprints of objects
 
 =begin readme
 
@@ -51,7 +53,8 @@ modules:
 =head1 DESCRIPTION
 
 This module provides a simple function for generating I<portable>
-cryptographic signatures of Perl data structures.
+digital fingerprints (a.k.a. signatures, not to be confiused with
+public key signatures.) of Perl data structures.
 
 The object is serialized into a canonical JSON structure, and then
 hashed using the MD5 algorithm.
@@ -81,7 +84,7 @@ can be customized, as needed.
     serializer => sub { ... },
   );
 
-Generate a cryptographic signature of the C<$data>.
+Generate a digital fingerprint of the C<$data>.
 
 The following options are supported:
 
