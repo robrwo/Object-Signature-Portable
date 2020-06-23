@@ -124,12 +124,18 @@ based on the following considerations:
 
 =over
 
-=item JSON is a simple, text-based format. The output is not likely to
+=item *
+
+JSON is a simple, text-based format. The output is not likely to
 change between module versions.
 
-=item Classes can be extended with hooks for JSON serialization.
+=item *
 
-=item Speed is not a factor.
+Classes can be extended with hooks for JSON serialization.
+
+=item *
+
+Speed is not a factor.
 
 =back
 

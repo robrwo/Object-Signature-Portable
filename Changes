@@ -4,6 +4,7 @@ Revision history for perl distribution {{$dist->name}}:
   [Documentation]
   - Updated copyright year.
 
+  - Adjusted POD markup.
 
 v0.2.0    2019-02-17 19:14:41+00:00 Europe/London
   [Toolchain]
