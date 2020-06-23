@@ -1,6 +1,9 @@
 Revision history for perl distribution {{$dist->name}}:
 
 {{$NEXT}}
+  [Documentation]
+  - Updated copyright year.
+
 
 v0.2.0    2019-02-17 19:14:41+00:00 Europe/London
   [Toolchain]
