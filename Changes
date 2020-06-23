@@ -6,6 +6,9 @@ Revision history for perl distribution {{$dist->name}}:
 
   - Adjusted POD markup.
 
+  [Toolchain]
+  - Update .gitignore rules.
+
 v0.2.0    2019-02-17 19:14:41+00:00 Europe/London
   [Toolchain]
   - Adapted to use Dist::Zilla/Pod::Weaver.
