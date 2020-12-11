@@ -4,7 +4,7 @@ Object::Signature::Portable - generate portable fingerprints of objects
 
 # VERSION
 
-version v0.2.1
+version v1.0.0
 
 # SYNOPSIS
 
