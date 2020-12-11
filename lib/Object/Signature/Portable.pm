@@ -12,7 +12,7 @@ use Crypt::Digest;
 use Exporter::Lite;
 use JSON::MaybeXS;
 
-our $VERSION = 'v1.0.0';
+our $VERSION = 'v1.0.1';
 
 our @EXPORT    = qw/ signature /;
 our @EXPORT_OK = @EXPORT;
