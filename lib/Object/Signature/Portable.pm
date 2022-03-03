@@ -9,7 +9,7 @@ use warnings;
 
 use Carp;
 use Crypt::Digest;
-use Exporter::Lite;
+use Exporter 5.57 qw/ import /;
 use JSON::MaybeXS;
 
 our $VERSION = 'v1.1.0';

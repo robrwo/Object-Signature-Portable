@@ -1,6 +1,9 @@
 Revision history for perl distribution {{$dist->name}}:
 
 {{$NEXT}}
+  [Enhancements]
+  - Switched from Exporter::Lite to Exporter.
+
   [Documentation]
   - Bump copyright year.
 
