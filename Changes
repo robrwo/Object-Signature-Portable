@@ -23,6 +23,8 @@ Revision history for perl distribution {{$dist->name}}:
 
   - Change Pod::Spelling test to use File::Slurper.
 
+  - Report version of JSON::PP, Object::Signature and File::Slurper, if installed.
+
 v1.0.0    2020-12-11 14:10:46+00:00 Europe/London
   [Documentation]
   - Updated notes about encodings and numification.
