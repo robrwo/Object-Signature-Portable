@@ -1,6 +1,9 @@
 Revision history for perl distribution {{$dist->name}}:
 
 {{$NEXT}}
+  [Documentation]
+  - Bump copyright year.
+
   [Toolchain]
   - Removed Travis-CI.
 

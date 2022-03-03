@@ -249,7 +249,7 @@ Thanks to various people at YAPC::EU 2014 for suggestions about
 
 # COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2013-2014, 2019-2020 by Robert Rothenberg.
+This software is Copyright (c) 2013-2014, 2019-2022 by Robert Rothenberg.
 
 This is free software, licensed under:
 
