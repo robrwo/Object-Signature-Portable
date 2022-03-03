@@ -7,6 +7,9 @@ Revision history for perl distribution {{$dist->name}}:
   [Documentation]
   - Fix encoding of links in README.
 
+  - Removed reference to Object::Serializer, since it seems to have
+    disappeared from CPAN.
+
   - Bump copyright year.
 
   [Toolchain]

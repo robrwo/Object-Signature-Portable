@@ -140,27 +140,27 @@ subclassesing them.
 One solution is to use a different serializer that can handle the
 object.
 
-Alternatively, you can write a wrapper function that uses a module
-such as [Object::Serializer](https://metacpan.org/pod/Object%3A%3ASerializer) to translate an object into a hash
-reference that can then be passed to the `signature` function, e.g.
+Alternatively, you can write a wrapper function that translates an
+object into a hash reference that can then be passed to the
+`signature` function, e.g.
 
 ```perl
 package Foo;
-
-use parent 'Object::Serializer';
 
 use Object::Signature::Portable ();
 
 sub signature {
     my $self = shift;
     return Object::Signature::Portable::signature(
-      data => $self->serialize
+      data => $self->_serialize
     );
 }
-```
 
-Note that [Object::Serializer](https://metacpan.org/pod/Object%3A%3ASerializer) allows you to define custom
-serialization strategies for various reference types.
+sub _serialize { # returns a hash reference of the object
+   my $self = shift;
+   ...
+}
+```
 
 ## Portability
 

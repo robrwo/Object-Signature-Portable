@@ -208,25 +208,25 @@ subclassesing them.
 One solution is to use a different serializer that can handle the
 object.
 
-Alternatively, you can write a wrapper function that uses a module
-such as L<Object::Serializer> to translate an object into a hash
-reference that can then be passed to the C<signature> function, e.g.
+Alternatively, you can write a wrapper function that translates an
+object into a hash reference that can then be passed to the
+C<signature> function, e.g.
 
     package Foo;
-
-    use parent 'Object::Serializer';
 
     use Object::Signature::Portable ();
 
     sub signature {
         my $self = shift;
         return Object::Signature::Portable::signature(
-          data => $self->serialize
+          data => $self->_serialize
         );
     }
 
-Note that L<Object::Serializer> allows you to define custom
-serialization strategies for various reference types.
+    sub _serialize { # returns a hash reference of the object
+       my $self = shift;
+       ...
+    }
 
 =head2 Portability
 
