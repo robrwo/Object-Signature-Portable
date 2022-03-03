@@ -18,6 +18,11 @@ Revision history for perl distribution {{$dist->name}}:
   [Other]
   - Removed bad rule from MANIFEST.SKIP.
 
+  [Tests]
+  - Remove legacy author tests from xt directory.
+
+  - Change Pod::Spelling test to use File::Slurper.
+
 v1.0.0    2020-12-11 14:10:46+00:00 Europe/London
   [Documentation]
   - Updated notes about encodings and numification.

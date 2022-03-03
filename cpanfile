@@ -23,9 +23,6 @@ on 'configure' => sub {
 };
 
 on 'develop' => sub {
-  requires "Const::Fast" => "0";
-  requires "English" => "0";
-  requires "File::Slurp" => "0";
   requires "Pod::Coverage::TrustPod" => "0";
   requires "Test::EOF" => "0";
   requires "Test::EOL" => "0";
