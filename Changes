@@ -5,6 +5,8 @@ Revision history for perl distribution {{$dist->name}}:
   - Switched from Exporter::Lite to Exporter.
 
   [Documentation]
+  - Fix encoding of links in README.
+
   - Bump copyright year.
 
   [Toolchain]
