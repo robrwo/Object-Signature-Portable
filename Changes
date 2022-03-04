@@ -1,6 +1,8 @@
 Revision history for perl distribution {{$dist->name}}:
 
 {{$NEXT}}
+
+v1.1.2    2022-03-04 19:22:27+00:00 Europe/London
   [Bug Fix]
   - Removed POD spelling release test altogether, GH#4.
 
