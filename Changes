@@ -1,6 +1,8 @@
 Revision history for perl distribution {{$dist->name}}:
 
 {{$NEXT}}
+
+v1.1.1    2022-03-04 10:37:07+00:00 Europe/London
   [Bug Fix]
   - Removed unnecessary use of Const::Fast from release test.
 
