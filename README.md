@@ -247,6 +247,10 @@ Robert Rothenberg <rrwo@cpan.org>
 Thanks to various people at YAPC::EU 2014 for suggestions about
 [Sereal::Encoder](https://metacpan.org/pod/Sereal%3A%3AEncoder).
 
+# CONTRIBUTOR
+
+Slaven Rezić <slaven@rezic.de>
+
 # COPYRIGHT AND LICENSE
 
 This software is Copyright (c) 2013-2014, 2019-2022 by Robert Rothenberg.
