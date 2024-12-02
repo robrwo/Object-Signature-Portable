@@ -13,7 +13,7 @@ Revision history for perl distribution {{$dist->name}}:
 
   - Documented Perl version support policy.
 
-  - Added SECURITY.md to the distribution.
+  - Added SECURITY-POLICY.md to the distribution.
 
   [Other]
   - Remove requirement for MANIFEST.SKIP in build.
