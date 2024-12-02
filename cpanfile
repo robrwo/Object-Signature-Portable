@@ -5,6 +5,7 @@ requires "Crypt::Digest" => "0";
 requires "Exporter" => "5.57";
 requires "JSON::MaybeXS" => "0";
 requires "perl" => "v5.14.0";
+recommends "Crypt::Digest" => "0.062";
 
 on 'test' => sub {
   requires "File::Spec" => "0";
