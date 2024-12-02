@@ -68,4 +68,9 @@ Where security vulnerabilities are known, the metadata may indicate newer versio
 
 ## Usage
 
+This software defaults to using the MD5 algorithm for generaing a signature of data structures. In most cases this
+should be good enough for detecting changes to data structures.  However, MD5 is no longer considered a secure
+alghorithm for cryptographic signatures.  If you need something more secure, then you will need to change the default.
+See the LIMITATIONS section of the module documentation for more information.
+
 Please see the software documentation for further information.
