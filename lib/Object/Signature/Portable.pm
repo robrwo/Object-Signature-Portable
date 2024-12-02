@@ -245,7 +245,7 @@ structures, as a simple means of determining whether two structures
 are different.
 
 For that purpose, the MD5 algorithm is probably good enough.  However,
-if you are hashing that in part comes from untrusted sources, or the
+if you are hashing data that in part comes from untrusted sources, or the
 consequences of two different data structures having the same
 signature are significant, then you should consider using a different
 algorithm.
