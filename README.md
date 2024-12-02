@@ -186,6 +186,12 @@ algorithm.
 
 This module is _not_ intended for hashing passwords.
 
+# SUPPORT FOR OLDER PERL VERSIONS
+
+This module requires Perl v5.14 or later.
+
+Future releases may only support Perl versions released in the last ten years.
+
 # SEE ALSO
 
 ## Similar Modules

@@ -2,9 +2,7 @@ package Object::Signature::Portable;
 
 # ABSTRACT: generate portable fingerprints of objects
 
-use v5.10;
-
-use strict;
+use v5.14;
 use warnings;
 
 use Carp;
@@ -252,9 +250,15 @@ algorithm.
 
 This module is I<not> intended for hashing passwords.
 
-=for readme continue
+=head1 SUPPORT FOR OLDER PERL VERSIONS
+
+This module requires Perl v5.14 or later.
+
+Future releases may only support Perl versions released in the last ten years.
 
 =head1 SEE ALSO
+
+=for readme continue
 
 =head2 Similar Modules
 

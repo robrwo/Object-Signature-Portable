@@ -1,12 +1,17 @@
 Revision history for perl distribution {{$dist->name}}:
 
 {{$NEXT}}
+  [Incompatible Changes]
+  - Bumped minimum supported Perl version to v5.14.
+
   [Documentation]
   - Updated contributors section.
 
   - Fixed a typo.
 
   - Bumped copyright year.
+
+  - Documented Perl version support policy.
 
   [Other]
   - Remove requirement for MANIFEST.SKIP in build.
