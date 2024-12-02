@@ -2,6 +2,9 @@ This is the Security Policy for the Perl 5 distribution Object-Signature-Portabl
 
 The latest version of this Security Policy can be found at <https://metacpan.org/dist/Object-Signature-Portable>.
 
+This text is based on the CPAN Security Group's Guidelines for Adding a Security Policy
+<https://security.metacpan.org/docs> (draft).
+
 # How to Report a Security Vulnerability in Object-Signature-Portable
 
 Security vulnerabilties can be reported by e-mail to the current project maintainers at <rrwo@cpan.org>.
