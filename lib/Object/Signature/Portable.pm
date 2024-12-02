@@ -10,6 +10,8 @@ use Crypt::Digest;
 use Exporter 5.57 qw/ import /;
 use JSON::MaybeXS;
 
+# RECOMMEND PREREQ: Crypt::Digest 0.062
+
 our $VERSION = 'v1.2.0';
 
 our @EXPORT    = qw/ signature /;
