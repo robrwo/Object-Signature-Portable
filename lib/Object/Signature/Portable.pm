@@ -131,7 +131,7 @@ change between module versions.
 
 =item *
 
-Consistent encoding of integers are strings.
+Consistent encoding of integers and strings.
 
 =item *
 

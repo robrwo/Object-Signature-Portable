@@ -109,7 +109,7 @@ The following options are supported:
 
     - JSON is a simple, text-based format. The output is not likely to
     change between module versions.
-    - Consistent encoding of integers are strings.
+    - Consistent encoding of integers and strings.
     - Classes can be extended with hooks for JSON serialization.
     - Speed is not a factor.
 
