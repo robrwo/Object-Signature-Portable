@@ -4,6 +4,8 @@ Revision history for perl distribution {{$dist->name}}:
   [Documentation]
   - Fixed typo.
 
+  - Renamed SECURITY-POLICY.md to SECURITY.md
+
 v1.2.0    2024-12-06 19:31:53+00:00 Europe/London
   [Incompatible Changes]
   - Bumped minimum supported Perl version to v5.14.
