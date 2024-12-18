@@ -24,6 +24,7 @@ on 'configure' => sub {
 };
 
 on 'develop' => sub {
+  requires "Perl::Critic" => "1.156";
   requires "Pod::Coverage::TrustPod" => "0";
   requires "Test::EOF" => "0";
   requires "Test::EOL" => "0";

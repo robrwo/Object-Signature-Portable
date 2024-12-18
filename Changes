@@ -6,6 +6,9 @@ Revision history for perl distribution {{$dist->name}}:
 
   - Renamed SECURITY-POLICY.md to SECURITY.md
 
+  [Tests]
+  - Added Perl::Critic configuration.
+
 v1.2.0    2024-12-06 19:31:53+00:00 Europe/London
   [Incompatible Changes]
   - Bumped minimum supported Perl version to v5.14.
