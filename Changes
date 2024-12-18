@@ -1,6 +1,8 @@
 Revision history for perl distribution {{$dist->name}}:
 
 {{$NEXT}}
+  [Tests]
+  - Add more author tests.
 
 v1.2.1    2024-12-18 11:53:57+00:00 Europe/London
   [Documentation]
