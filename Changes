@@ -9,6 +9,9 @@ Revision history for perl distribution {{$dist->name}}:
   [Tests]
   - Added Perl::Critic configuration.
 
+  [Other]
+  - Include core modules in prerequisites.
+
 v1.2.0    2024-12-06 19:31:53+00:00 Europe/London
   [Incompatible Changes]
   - Bumped minimum supported Perl version to v5.14.
