@@ -316,7 +316,7 @@ L<Sereal::Encoder>.
 =head2 Reporting Security Vulnerabilities
 
 Security issues should not be reported on the bugtracker website.
-Please see F<SECURITY-POLICY.md> for instructions how to report
+Please see F<SECURITY.md> for instructions how to report
 security vulnerabilities
 
 =cut

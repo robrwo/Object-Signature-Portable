@@ -1,6 +1,9 @@
 Revision history for perl distribution {{$dist->name}}:
 
 {{$NEXT}}
+  [Documentation]
+  - Fixed a typo that references the security policy.
+
   [Tests]
   - Add more author tests.
 

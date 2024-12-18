@@ -247,7 +247,7 @@ feature.
 ## Reporting Security Vulnerabilities
 
 Security issues should not be reported on the bugtracker website.
-Please see `SECURITY-POLICY.md` for instructions how to report
+Please see `SECURITY.md` for instructions how to report
 security vulnerabilities
 
 # AUTHOR
